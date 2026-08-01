@@ -1,0 +1,7 @@
+vivado*
+*.log
+*.jou
+*.backup.*
+2.sim/
+.Xil/
+package-lock.json

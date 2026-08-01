@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Desktop/2/st/01_rtl/uart_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_top
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Desktop/2/st/01_rtl/uart_tx.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Desktop/2/st/02_sim/tb_top_uart_tx.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_top_uart_tx
