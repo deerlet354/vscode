@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/OneDrive/Desktop/2/2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/OneDrive/Desktop/2/st/01_rtl/uart_top.v,1785484999,verilog,,D:/OneDrive/Desktop/2/st/01_rtl/uart_tx.v,,uart_top,,,,,,,,
+D:/OneDrive/Desktop/2/st/01_rtl/uart_tx.v,1785482096,verilog,,D:/OneDrive/Desktop/2/st/02_sim/tb_top_uart_tx.v,,uart_tx,,,,,,,,
+D:/OneDrive/Desktop/2/st/02_sim/tb_top_uart_tx.v,1785320678,verilog,,,,tb_top_uart_tx,,,,,,,,

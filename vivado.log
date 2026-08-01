@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jul 31 16:12:54 2026
+# Process ID: 20108
+# Current directory: D:/OneDrive/Desktop/2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4240 D:\OneDrive\Desktop\2\2.xpr
+# Log file: D:/OneDrive/Desktop/2/vivado.log
+# Journal file: D:/OneDrive/Desktop/2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/OneDrive/Desktop/2/2.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/OneDrive/Desktop/2/2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/FPGA_Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1284.199 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_top_uart_tx'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/Desktop/2/2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'E:/FPGA_Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top_uart_tx' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/Desktop/2/2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_top_uart_tx_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Desktop/2/st/01_rtl/uart_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Desktop/2/st/01_rtl/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/Desktop/2/st/02_sim/tb_top_uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_uart_tx
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/Desktop/2/2.sim/sim_1/behav/xsim'
+"xelab -wto f6a0359d2800442399fa41d22b1cfd5f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_uart_tx_behav xil_defaultlib.tb_top_uart_tx xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/FPGA_Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto f6a0359d2800442399fa41d22b1cfd5f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_uart_tx_behav xil_defaultlib.tb_top_uart_tx xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/OneDrive/Desktop/2/st/01_rtl/uart_top.v" Line 1. Module uart_top_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive/Desktop/2/st/01_rtl/uart_tx.v" Line 1. Module uart_tx(BAUD_DIV=867) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive/Desktop/2/st/01_rtl/uart_top.v" Line 1. Module uart_top_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/OneDrive/Desktop/2/st/01_rtl/uart_tx.v" Line 1. Module uart_tx(BAUD_DIV=867) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx(BAUD_DIV=867)
+Compiling module xil_defaultlib.uart_top_default
+Compiling module xil_defaultlib.tb_top_uart_tx
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_uart_tx_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/Desktop/2/2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_uart_tx_behav -key {Behavioral:sim_1:Functional:tb_top_uart_tx} -tclbatch {tb_top_uart_tx.tcl} -view {D:/OneDrive/Desktop/2/tb_top_uart_tx_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config D:/OneDrive/Desktop/2/tb_top_uart_tx_behav.wcfg
+source tb_top_uart_tx.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_uart_tx_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1284.199 ; gain = 0.000
+run 5 ms
+run 5 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 16:18:29 2026...
